@@ -24,13 +24,8 @@
         ng-init="selection_max_size=100;">
       <div>
             <span>
-                <button class="btn-link"
-                        ng-click="parameter.value = parameter.dov;">
-                    <span class="glyphicon glyphicon-check"></span> Select All
-                </button>
-                <button class="btn-link" ng-click="parameter.value = [];">
-                    <span class="glyphicon glyphicon-unchecked"></span> Select None
-                </button>
+                <button class="btn-link" ng-click="parameter.value = parameter.dov;">Select All</button> 
+                <button class="btn-link" ng-click="parameter.value = [];">Select None</button>
             </span>
          <select ng-attr-size="{{wfCtrl.helpers.min(8,parameter.dov.length)}}" style="width:100%;"
                  ng-model="parameter.value"
